@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--Icons from Font Awesome-->
+	<script src="https://kit.fontawesome.com/7e8697690d.js" crossorigin="anonymous"></script>
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--Rampart One-->
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+	<!--Work Sans-->
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+	{% block hd %}
+
+	{% endblock %}
+	<title>
+        {% block title %}
+            Eficace - Home Page
+        {% endblock %}
+    </title>
+	<link rel="icon" type='image/x-icon' href="../static/images/logo.png" />
+</head>
+
+
+<body id="bdy" class=" b_light ">
+	<div class="navbar">
+		<div class="head_section">
+			<div class="header_img">
+				<a href="/"><img src="{{url_for('static', filename='images/logo.png')}}" style="height:100px;width:120px;" alt="logo"></a>
+			</div>
+			<div>
+                <a class="header_name" id="hname" style="font-size: 50px;" href="#">Eficace</a>
+            </div>
+			<div class="toggle">
+				<div class="toggle_button">
+					<label class="switch">
+						<input id="mode" type="checkbox" onchange="change_mode()">
+                        <span class="slider round"></span>
+                    </label>
+				</div>
+				<div id="toggle_font"> Go Dark! </div>
+			</div>
+		</div>
+		<hr class="hrline" style="margin-top: 0px;">
+    </div>
+
+	<div class="temp">
+		<form action="" method="POST">
+
+		</form>
+
+	</div>
+
+    {% block content %}
+
+	<div class="col-md-2">
+         &nbsp;
+     </div>
+	<div class="col-md-4">
+		<h1 style="margin-top: 30px;">Notes</h1>
+		<br>
+		<a href=notes>
+			<button class="b_light" id="button">Notes</button>
+		</a>
+		<br><br>
+        <img src="{{url_for('static', filename='images/timer.png')}}" id="timer_img" alt="timer_img">
+    </div>
+	<br>
+	<div class="col-md-4">
+        <img src="{{url_for('static', filename='images/notes.png')}}" id="notes_img" alt="notes_img">
+		<h1 style="margin-top: 128px;">Timer</h1>
+		<br>
+		<a href=select_time>
+			<button class="b_light" id="button">Timer</button>
+		</a>
+	</div>
+	<div class="col-md-2">
+        &nbsp;
+    </div>
+
+
+
+	<footer>
+		<hr class="hrline">
+		<p>Creators</p>
+		<div class="Us">
+			<div class="tanvi" style="margin-bottom: 20px;">
+				<h4>Tanvi</h4>
+                <a href="https://www.linkedin.com/in/tanvi-bugdani/" target="_blank" class="footer_links"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/tanvi355" target="_blank" class="footer_links" style="color:black"><i class="fab fa-github fa-2x" ></i></a>
+            </div>
+			<div class="sakina" style="margin-bottom: 20px;">
+				<h4>Sakina</h4>
+                <a href="https://www.linkedin.com/in/sakina-nomi/" target="_blank" class="footer_links"><i class="fab fa-linkedin fa-2x" ></i></a>
+                <a href="https://github.com/sakinanomi" target="_blank" class="footer_links" style="color:black"><i class="fab fa-github fa-2x" ></i></a>
+            </div>
+		</div>
+	</footer>
+
+	{% endblock %}
+
+    <!--Custom JS-->
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+</body>
+
+</html>

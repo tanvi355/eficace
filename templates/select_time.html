@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block hd %}
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/timer_style.css')}}">
+
+{% endblock %}
+
+{% block title %}
+    Select Time
+{% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <h3>Select one of the given time periods</h3>
+        </div>
+        <br>
+        <form class="timer" action="/timer" method="post">
+            <div class="row">
+                <div class="col-sm-3">
+                    <button type="submit" class="btn" name="15 min" value="15 min">15 min</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn" name="30 min" value="30 min">30 min</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn" name="45 min" value="45 min">45 min</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn" name="60 min" value="60 min">60 min</button>
+                </div>
+            </div>
+        </form>
+
+        <br>
+        <h3>OR</h3>
+        <br>
+        <div class="row">
+            <h3>Add your own time period!</h3>
+        </div>
+
+        <div style="margin-top: 45px;">
+
+            <form class="timer" action="/timer" method="post">
+                <input style="width:500px;height:50px" type="text" name="time" autofocus placeholder="Enter the time in minutes"><br>
+                <button style="margin-top: 30px;" class="btn" type="submit" >Start!</button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer>
+		<hr class="hrline">
+		<p>Creators</p>
+		<div class="Us">
+			<div class="tanvi" style="margin-bottom: 20px;">
+				<h4>Tanvi</h4>
+                <a href="https://www.linkedin.com/in/tanvi-bugdani/" target="_blank" class="footer_links"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/tanvi355" target="_blank" class="footer_links" style="color:black"><i class="fab fa-github fa-2x" ></i></a>
+            </div>
+			<div class="sakina" style="margin-bottom: 20px;">
+				<h4>Sakina</h4>
+                <a href="https://www.linkedin.com/in/sakina-nomi/" target="_blank" class="footer_links"><i class="fab fa-linkedin fa-2x" ></i></a>
+                <a href="https://github.com/sakinanomi" target="_blank" class="footer_links" style="color:black"><i class="fab fa-github fa-2x" ></i></a>
+            </div>
+		</div>
+	</footer>
+
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block hd %}
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/timer_style.css')}}">
+
+{% endblock %}
+
+{% block title %}
+    Timer
+{% endblock %}
+
+{% block content %}
+
+
+    <audio id="clockTick">
+
+        <source src="../static/audiofiles/clockTick.wav" type="audio/wav">
+
+      </audio>
+
+
+      <audio id="timeup">
+
+        <source src="../static/audiofiles/alarm_classic.mp3" type="audio/mpeg">
+
+      </audio>
+
+
+          <div class="circle">
+             <span class="timer" id="timer">{{ time }}</span>
+          </div>
+
+
+
+         <progress max="{{time}}" value="{{time}}"
+        class="progress progress__set"
+        id="progressBar"
+        >
+        </progress>
+
+
+        <button style="margin-top: 2px;" class="btn" type="submit" id="muteBtn" onclick="muteUnmute()">Mute/Unmute</button>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <hr class="hrline">
+        <p>Creators</p>
+        <div class="Us">
+            <div class="tanvi" style="margin-bottom: 20px;">
+                <h4>Tanvi</h4>
+                <a href="https://www.linkedin.com/in/tanvi-bugdani/" target="_blank" class="footer_links"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/tanvi355" target="_blank" class="footer_links" style="color:black"><i class="fab fa-github fa-2x" ></i></a>
+            </div>
+            <div class="sakina" style="margin-bottom: 20px;">
+                <h4>Sakina</h4>
+                <a href="https://www.linkedin.com/in/sakina-nomi/" target="_blank" class="footer_links"><i class="fab fa-linkedin fa-2x" ></i></a>
+                <a href="https://github.com/sakinanomi" target="_blank" class="footer_links" style="color:black"><i class="fab fa-github fa-2x" ></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const timeup=document.getElementById("timeup");
+        const clockTick=document.getElementById("clockTick");
+        const timerText= document.getElementById("timer");
+        const progressBar=document.getElementById("progressBar");
+
+        var m=document.getElementById("clockTick");
+
+        function muteUnmute() {
+            if(m.muted === false){
+                m.muted = true;
+            }
+            else{
+                m.muted = false;
+            }
+
+        }
+
+
+        let timerCounter=progressBar.max;//has the seconds count
+        let t = {{ time }};
+        let min = (Math.floor(t/60))-1;
+
+
+        let sec = 60;
+
+        const interval=setInterval(()=>{
+
+            if(timerCounter<1)
+            {
+                  clockTick.play();
+                  timerText.innerHTML='0:0';
+                  clearInterval(interval);
+
+                  setTimeout(function() {
+
+                    timeup.play();
+
+                    window.alert("Time up");
+                    history.back();
+
+                    }, 1000);
+
+            }
+
+            else{
+
+                clockTick.play();
+                timerCounter=timerCounter-1;
+
+                //timerText.innerHTML=timerCounter;
+                timerText.innerHTML = (min) + ":" + (sec);
+
+                progressBar.value=timerCounter;
+
+                sec = sec - 1;
+
+               if (sec == 0) {
+                 min = min - 1;
+                 sec = 60;
+               }
+
+             
+
+            }
+
+        },1000);
+
+    </script>
+
+
+{% endblock %}

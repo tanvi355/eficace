@@ -1,0 +1,69 @@
+.notepad
+{
+    height:450px;
+    width:450px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    color:black;
+    position: relative;
+    border-radius: 18px;
+}
+
+
+  .bottom {
+
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .note{
+      width: 100%;
+  }
+
+  .input
+  {
+    display: block;
+    width: 100%;
+    height:290px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    color: black;
+    
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .input:focus {
+
+    background: #ffffff;
+}
+
+.add{
+    background-color: cornflowerblue;
+   /* background-color: #009579;*/
+}
+.update
+{
+  background-color: blueviolet;
+
+}
+.delete
+{
+  background-color: crimson;
+}
+
+.notes_footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Height of the footer */
+}
+
+textarea{
+    border-color: white;
+}
