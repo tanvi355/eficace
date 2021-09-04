@@ -88,24 +88,10 @@ def start_timer():
     elif request.form.get('60 min'):
         time = 3600
     else:
-        if(request.form.get('time')== ''):
-            time = 600
-
-        else:
-            time = int(request.form.get('time'))*60
-
-    '''hr=time//60
-    min=time%60
-    mins=time'''
+        time = 600
 
 
     return render_template("timer.html",time=time)
-
-
-
-
-
-
 
 
 '''
