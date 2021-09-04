@@ -29,7 +29,7 @@
     - Ticking sound & alarm to notify when session is over.
     - `Mute/Unmute` button for the sound.
 
-## Steps tp use it on your local machine:
+## Steps to use it on your local machine:
 
 1. Fork and clone this repository or download the code.
 2. In your command prompt, navigate to **eficace**.
