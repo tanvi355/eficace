@@ -44,21 +44,9 @@
         <br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <footer>
         <hr class="hrline">
-        <p>Creators</p>
+        <h3>< /Developed by ></h3>
         <div class="Us">
             <div class="tanvi" style="margin-bottom: 20px;">
                 <h4>Tanvi</h4>
@@ -135,8 +123,10 @@
                  min = min - 1;
                  sec = 60;
                }
-
-             
+               //to add leading zero to seconds
+               if (sec < 10 || sec == 0) {
+                 sec = '0' + sec;
+               }
 
             }
 
