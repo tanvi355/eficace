@@ -13,6 +13,7 @@
 <img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" />
 <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
 <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+<img alt="JS" src="https://img.shields.io/badge/javascript-%23000.svg?style=for-the-badge&logo=javascript&logoColor=white" />
 <img alt="SQLite" src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
 </p>
 
@@ -36,7 +37,15 @@
 3. Run this app using the command `python app.py`.
 4. Now, navigate to `http://127.0.0.1:5000/` in your web browser to use the app.
 
-#### Note: Use **Google Chrome** browser for best performance.
+#### Note: Use **Google Chrome** browser for best performance on laptop only.
+
+## Project link:
+
+https://eficace.herokuapp.com/
+
+## YouTube link:
+
+https://www.youtube.com/watch?v=AJqZVsVeYdM
 
 ## Developed by:
 
