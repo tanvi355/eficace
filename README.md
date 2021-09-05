@@ -50,5 +50,6 @@ https://www.youtube.com/watch?v=AJqZVsVeYdM
 ## Developed by:
 
   <h3 align="center">
-  <a href="https://github.com/tanvi355"> Tanvi </a> & <a href="https://github.com/sakinanomi"> Sakina </a>
+  <a href="https://github.com/sakinanomi"> Sakina </a> & <a href="https://github.com/tanvi355"> Tanvi </a>  
+    for <a href="https://uplift.girlscript.tech/hack-o-uplift.html"> Hack-O-Uplift </a>
   </h3>
