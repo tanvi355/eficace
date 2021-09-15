@@ -1,5 +1,5 @@
-<h1 align="center">🚀 EFICACE </h1>
-<h2 align="center">🌳 A Productivity Web App 🌳</h2>
+<h1 align="center"> EFICACE </h1>
+<h2 align="center"> A Productivity Web App </h2>
 
 ## About:
 
@@ -29,6 +29,8 @@
     - Option to add your own time period.
     - Ticking sound & alarm to notify when session is over.
     - `Mute/Unmute` button for the sound.
+
+- Both dark and light modes.
 
 ## Steps to use it on your local machine:
 
