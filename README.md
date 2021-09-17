@@ -45,9 +45,6 @@
 
 https://eficace.herokuapp.com/
 
-## YouTube link:
-
-https://www.youtube.com/watch?v=AJqZVsVeYdM
 
 ## Developed by:
 
