@@ -1,6 +1,10 @@
 <h1 align="center"> EFICACE </h1>
 <h2 align="center"> A Productivity Web App </h2>
 
+## Live link: [Click Here](https://eficace.herokuapp.com/)
+
+## Demo video: [Click here](https://youtu.be/hjapRwHycVo)
+
 ## About:
 
 
@@ -41,11 +45,6 @@
 
 #### Note: Use **Google Chrome** browser for best performance on laptop only.
 
-## Project link:
-
-https://eficace.herokuapp.com/
-
-## Demo video: [Click here](https://youtu.be/hjapRwHycVo)
 
 ## Developed by:
 
