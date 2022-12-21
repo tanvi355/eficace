@@ -3,6 +3,8 @@
 
 ## Live link: [Click Here](https://eficace.herokuapp.com/)
 
+### <i> Note: The deployment is no longer available as Heroku has discontinued its free plan. </i>
+
 ## Demo video: [Click here](https://youtu.be/hjapRwHycVo)
 
 ## About:
